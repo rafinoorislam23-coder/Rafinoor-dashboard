@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>RAFINOOR • 24H CG-West Report</title>
-<script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=lvV93HdyLJHzpObblmIOV1CNhjD1F0ztB4pyCWzQF6YXNlLLB0iGO1eQRMpnoqg6xAadDEBspGc8o4Wc8xhoqrVZXhKy9b7LCXGVGxgqz5cjcYvWJDgN_yyQkksOKunMsP8LCRiIQK7Kzzp-Paxf7RvvE23QAZu4I087rLuUCNS4hS870qzTICw_iehOfOfHkN2Vhs9zXSr1CG6r9wvCN2mjaBXpNYonPx7kjKmliR4gMs0sJNB_r_GCan-p0Nm0D0VT-S6zujX6xhIuIXGbyySBGX1DRGQ-m3MUY3pgKnNjjmT9GOd2kKLBR9aLooBA-A5TmRetoYEyAkCFMxL2cHwJfY_25bI5YuYelKEHX9c" charset="UTF-8"></script><script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 <style>
 :root{
   --green:#08a947; --dark:#087b36; --light:#d7efcf; --yellow:#fff900;
@@ -593,7 +593,7 @@ document.getElementById("dataFile").addEventListener("change",e=>{
   uploadDataFile(e.target.files[0]);
   e.target.value="";
 });
-autoRollover();cleanExistingLogos().then(()=>{setupInputs();render();});
+autoRollover();loadLogosLocal();setupInputs();render();setTimeout(()=>{cleanExistingLogos();},1500);
 </script>
 
 <script>
